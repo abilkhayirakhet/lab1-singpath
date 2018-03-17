@@ -116,7 +116,7 @@ get_task_description(8, 'Radians')
 
 angle = random.randint(1, 360)
 
-def get_radian(ange):
+def get_radian(angle):
     return (angle * math.pi) / 180
 
 

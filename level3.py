@@ -163,3 +163,55 @@ def get_curry_puff_cost(type = 'Chicken'):
 
 get_task_result(11, get_curry_puff_cost('Fish'))
 put_empty_line()
+
+# task 12
+get_task_description(12, 'Subtract Last Digit')
+
+def get_last_digit(number):
+    digits = [int(x) for x in str(number)]
+    return int(digits[-1])
+
+def subtract_last_digit(num1, num2):
+    return num1 - get_last_digit(num2)
+
+get_task_result(12, subtract_last_digit(25, 17))
+put_empty_line()
+
+# task 14
+get_task_description(14, 'String Length')
+
+word = get_rand_word();
+
+def getStringLength(word):
+    stringLentgh = len(word)
+    return stringLentgh
+
+print("Word is: " + word)
+get_task_result(14, repeat_string(getStringLength(word), word))
+put_empty_line()
+
+# task 17
+get_task_description(17, 'str_int')
+
+def str_int(param1, param2):
+    param1_type = type(param1).__name__
+    param2_type = type(param2).__name__
+
+    if param1_type == 'str' and param2_type == 'int' or param1_type == 'int' and param2_type == 'str':
+
+        if param1_type == 'int':
+            get_task_result(17, repeat_string(param1, param2))
+        else:
+            get_task_result(17, repeat_string(param2, param1))
+    else:
+        if param1_type == 'int' and param2_type == int:
+            get_task_result(17, get_sum(param1, param2))
+        else:
+            get_task_result(17, param1 + param2)
+
+str_int(2, 5)
+str_int(2, 'perfect')
+str_int('perfect', 2)
+str_int('perfect', 'discipline')
+put_empty_line()
+

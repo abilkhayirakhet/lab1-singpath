@@ -7,53 +7,65 @@ def write_bold(input_string):
     boldReset = "\033[0;0m"
     return bold + input_string + boldReset
 
+
+# Метод который выводит в консоль описание задания
+def get_task_description(index, label):
+    print(str(index) + ' task\'s label: ' + label)
+
+
+def get_task_result(index, result):
+    print('Result of task' + str(index) + ': ' + write_bold(str(result)))
+
+
+def put_empty_line():
+    print("\n")
+
+
 # task 1
-print('1 task\'s label: "Welcome task"')
-print("Result of task 1: Here I don't have to type any code")
-print("\n")
+get_task_description(1, 'Welcome task')
+get_task_result(1, 'Here I don\'t have to type any code')
+put_empty_line()
 
 # task 2
-print('2 task\'s label: "Your First Program"')
+get_task_description(2, 'Your First Program')
 greeting = 'Hello World'
-print("Result of task 2: "+ write_bold(greeting))
-print("\n")
+get_task_result(2, greeting)
+put_empty_line()
 
 # task 3
-print('3 task\'s label: "Starter Code"')
+get_task_description(3, 'Starter Code')
 bob = 'Thanks for the help'
-print("Result of task 3: "+ write_bold(bob))
-print("\n")
+get_task_result(3, bob)
+put_empty_line()
 
 # task 5
-print('5 task\'s label: "Still more variables"')
+get_task_description(5, 'Still more variables')
 name = 4.27
 pigs = 'can fly'
-print("Result of task 5: "+write_bold(str(name) + ' ' + str(pigs)))
-print("\n")
+get_task_result(5, str(name) + ' ' + str(pigs))
+put_empty_line()
 
 # task 6
-print('6 task\'s label: "Variables"')
+get_task_description(6, 'Variables')
 age = 7
-print("Result of task 6: "+write_bold(str(age)))
-print("\n")
+get_task_result(6, age)
+put_empty_line()
 
 # task 7
-print('7 task\'s label: "Another Variable"')
+get_task_description(7, 'Another Variable')
 spam = 'anxious'
-print("Result of task 7: "+write_bold(spam))
-print("\n")
+get_task_result(7, spam)
+put_empty_line()
 
 # task 8
-print('8 task\'s label: "More Fun with Variables"')
+get_task_description(8, 'More Fun with Variables')
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
 pi       = 3.14159265
-print("Result of task 8: ")
-print(write_bold(alphabet))
-print(write_bold(str(pi)))
-print("\n")
+get_task_result(8, alphabet + ' ' + str(pi))
+put_empty_line()
 
 # task 9
-print('9 task\'s label: "Wizard"')
+get_task_description(9, 'Wizard')
 wizard = 'Oz'
-print("Result of task 9: " + write_bold(wizard))
+get_task_result(9, wizard)
 

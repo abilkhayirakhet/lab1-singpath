@@ -2,13 +2,17 @@
 # Implementer: Abilkhayir Akhet
 
 '''
-Вр 2 уровне решил не все подряд делать, а выборочно, так как выполнение определенных тасков
+Во 2 уровне решил не все подряд делать, а выборочно, так как выполнение определенных тасков
 включает в себе выполнение более ранних тасков
 '''
 
 from commonmethods import get_task_description
 from commonmethods import get_task_result
 from commonmethods import put_empty_line
+from commonmethods import get_level_number
+
+get_level_number(2)
+put_empty_line()
 
 # task 5
 get_task_description(5, 'Python Math')

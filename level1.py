@@ -4,6 +4,10 @@
 from commonmethods import get_task_description
 from commonmethods import get_task_result
 from commonmethods import put_empty_line
+from commonmethods import get_level_number
+
+get_level_number(1)
+put_empty_line()
 
 # task 1
 get_task_description(1, 'Welcome task')

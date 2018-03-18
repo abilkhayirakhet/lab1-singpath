@@ -137,7 +137,7 @@ get_task_result(10, get_count_of_evens(list))
 put_empty_line()
 
 #task11
-get_task_description(12, 'Duplicate the elements in a list')
+get_task_description(11, 'Duplicate the elements in a list')
 def duplicate_list_elements(list):
     new_list = []
     for x in list:
@@ -146,5 +146,15 @@ def duplicate_list_elements(list):
     return new_list
 
 get_task_result(11, duplicate_list_elements([1,2]))
+put_empty_line()
+
+#task12
+get_task_description(12, 'Symmetric Number Judge')
+def symmetric_number_judge(n):
+    return str(n) == str(n)[::-1]
+
+get_task_result(12, symmetric_number_judge(345))
+put_empty_line()
+
 
 

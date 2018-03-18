@@ -139,9 +139,12 @@ put_empty_line()
 #task11
 get_task_description(12, 'Duplicate the elements in a list')
 def duplicate_list_elements(list):
+    new_list = []
     for x in list:
-        list.append(x)
+        new_list.append(x)
+        new_list.append(x)
+    return new_list
 
+get_task_result(11, duplicate_list_elements([1,2]))
 
-duplicate_list_elements([1,2])
 

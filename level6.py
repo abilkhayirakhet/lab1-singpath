@@ -133,9 +133,8 @@ def is_email(string):
     if not has_space(string) and has_email_sign(string):
         return True
     return False
-
-
 get_task_result(14, is_email('email@cheaker'))
+put_empty_line()
 
 
 

@@ -1,4 +1,4 @@
-# SingPath's level_4 task
+# SingPath's level_5 task
 # Implementer: Abilkhayir Akhet
 
 '''
